@@ -32,9 +32,9 @@ $(function() {
      * and that the URL is not empty.
      */
     it('URL defined and URL not empty', function() {
-      allFeeds.forEach(function() {
+      allFeeds.forEach(function(feed) {
         expect(feed.url).toBeDefined();
-        expect(feed.url).not.toBe(0);
+        expect(feed.url.length).not.toBe(0);
       });
     });
 
@@ -44,9 +44,9 @@ $(function() {
      * and that the name is not empty.
      */
     it('name defined and name not empty', function() {
-      allFeeds.forEach(function() {
+      allFeeds.forEach(function(feed) {
         expect(feed.name).toBeDefined();
-        expect(feed.name).not.toBe(0);
+        expect(feed.name.length).not.toBe(0);
       });
     });
   });
