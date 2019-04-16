@@ -11,3 +11,8 @@ To start the application you have to open index.html in your browser.
 The tests can be found in the feedreader.js file. If a test passes it will be shown in green in the browser using Jasmine, otherwise it will be red if the test fails.
 
 ## Tests in this Project
+
+It was tested if the RSS Feeds are defined and if the URL and name is defined and not empty.
+The menu should be hidden by default and should change its visibility when clicked.
+There should be at least one entry element in the feed container.
+When the new feed loads the content should change.
